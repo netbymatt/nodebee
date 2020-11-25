@@ -1,0 +1,36 @@
+{
+  "name": "nodebee",
+  "version": "0.1.0",
+  "description": "A Node.js tool for logging Ecobee thermostat data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+		"setup": "node setup.js",
+		"cron": "node cron.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netbymatt/nodebee.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "ecobee",
+    "mysql",
+    "logging"
+  ],
+  "author": "Matt Walsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netbymatt/nodebee/issues"
+  },
+  "homepage": "https://github.com/netbymatt/nodebee#readme",
+  "dependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "luxon": "^1.25.0",
+    "mysql2": "^2.2.5"
+  }
+}
