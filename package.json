@@ -1,13 +1,13 @@
 {
   "name": "nodebee",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Node.js tool for logging Ecobee thermostat data",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-		"setup": "node setup.js",
-		"cron": "node cron.js"
+    "setup": "node setup.js",
+    "cron": "node cron.js"
   },
   "repository": {
     "type": "git",
