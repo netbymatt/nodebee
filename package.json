@@ -27,10 +27,10 @@
   },
   "homepage": "https://github.com/netbymatt/nodebee#readme",
   "dependencies": {
-    "eslint": "^7.14.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.22.1",
-    "luxon": "^1.25.0",
-    "mysql2": "^2.2.5"
+    "luxon": "^2.0.0",
+    "mysql2": "^2.3.3"
   }
 }
