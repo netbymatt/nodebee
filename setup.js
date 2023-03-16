@@ -1,4 +1,4 @@
-const config = require('./utils/loadconfig');;
+const config = require('./utils/loadconfig');
 const { NodeBee } = require('./ecobee');
 const { Sql } = require('./sql');
 const testPin = require('./setup/testpin');

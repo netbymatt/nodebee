@@ -387,7 +387,7 @@ class NodeBee {
 			// process the csv row
 			let values = row.split(',');
 			// date and time are stored in the first two values
-			const timestamp = DateTime.fromFormat(`${values[0]} ${values[1]}`, 'yyyy-MM-dd HH:mm:ss', { zone: thermostat.location.timeZone }).setZone('UTC').toJSDate();
+			const timestamp = DateTime.fromFormat(`${values[0]} ${values[1]}`, 'yyyy-MM-dd HH:mm:ss', { zone: thermostat.location.timeZoneOffsetMinutes ?? thermostat.location.timeZone }).setZone('UTC').toJSDate();
 			// add the id and date/time to the row, removing the first two values in the array (date and time, already used above)
 			values = values.slice(2);
 			values.unshift(
@@ -445,7 +445,7 @@ class NodeBee {
 			const [date, time, ...sensorValues] = sensor.split(',');
 
 			// convert date and time into timestamp
-			const timestamp = DateTime.fromFormat(`${date} ${time}`, 'yyyy-MM-dd HH:mm:ss', { zone: thermostat.location.timeZone }).setZone('UTC').toJSDate();
+			const timestamp = DateTime.fromFormat(`${date} ${time}`, 'yyyy-MM-dd HH:mm:ss', { zone: thermostat.location.timeZoneOffsetMinutes ?? thermostat.location.timeZone }).setZone('UTC').toJSDate();
 
 			// loop through remaining values
 			sensorValues.forEach((value, j) => {

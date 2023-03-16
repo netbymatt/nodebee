@@ -27,7 +27,7 @@ mysql -u <username> -p nodebee < nodebee.sql
 3. Record the API key that is created for the new app.
 
 ### Node.js app
-1. Open config.js
+1. Set up environment variables as listed in config-defaults.js, or edit config.js as noted below
 2. Enter your API key on the `clientId` line. Then uncomment the line.
 3. Enter the database credentials, host name and database name in `username`, `password`, `host` and `name`. Then uncomment each line
 4. Run the setup routine. It will test the database connection and then guide you through the process of connecting the app with your Ecobee account.

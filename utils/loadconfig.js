@@ -1,5 +1,5 @@
 // load configuration from user provided and then fall back to defaults
-
+require('dotenv').config();
 const Defaults = require('../config-defaults');
 const objForEach = require('./objforeach');
 const fs = require('fs');
