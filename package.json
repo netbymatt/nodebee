@@ -32,6 +32,6 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.22.1",
     "luxon": "^3.3.0",
-    "mysql2": "^2.3.3"
+    "mysql2": "^3.0.0"
   }
 }
